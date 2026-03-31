@@ -29,35 +29,62 @@ latest_posts:
 
 ## About Me
 
-I am a first-year graduate student in Mechanical Engineering at Shanghai University of Engineering Science, advised by Prof. Chen Saixuan (陈赛璇). 我的研究方向是**机器人灵巧手、仿生机械手与腱驱动机制**，同时探索强化学习在机器人控制中的应用。 I work across the full stack—from high-level RL policy design in JAX to low-level embedded control on STM32 and ESP32—bridging simulation and real-world hardware调试.
+I am a first-year graduate student in Mechanical Engineering at Shanghai University of Engineering Science, advised by Prof. Chen Saixuan (陈赛璇). My research focuses on dexterous robotic hands, bionic manipulation, and tendon-driven mechanisms, with additional interest in reinforcement learning for robot control. I work across the full stack, from high-level RL policy design in JAX to low-level embedded control on STM32 and ESP32, bridging simulation and real-world hardware debugging.
 
-我在硕士期间参与了灵巧手开源项目复现工作，也曾在寒假线上实习中直接接触工业级灵巧手硬件，熟悉腱绳传动中的弹簧张力计算、绳结防滑、摩擦补偿等实际工程问题。 I have hands-on experience with tendon-driven systems, including tension modeling, cable routing, and iterative debugging of slipping and friction issues in prototype stages.
+I have participated in reproducibility projects for open-source dexterous hand platforms and have hands-on experience with industrial-grade dexterous hand hardware during winter online internships. I am familiar with practical engineering challenges in tendon-driven systems, including spring tension calculation, cable knot anti-slip techniques, and friction compensation.
 
 Currently, I am working on reproducible control frameworks for open-source dexterous hand platforms, aiming to bridge the sim-to-real gap in robotic manipulation.
 
-目前我正在推进 `aero-hand-open` 等开源灵巧手项目的复现与控制优化，探索仿真环境与真实硬件之间的迁移方法。
-
 ## Research Interests
 
-- Dexterous Robotic Hands & Bionic Manipulation  机器人灵巧手与仿生操控
-- Tendon-Driven Mechanism Design  腱驱动机构设计
-- Reinforcement Learning for Robot Control  机器人强化学习控制
-- Hardware-in-the-Loop Simulation  硬件在环仿真
+- Dexterous Robotic Hands & Bionic Manipulation
+- Tendon-Driven Mechanism Design
+- Reinforcement Learning for Robot Control
+- Hardware-in-the-Loop Simulation
 
 ## Education
 
-- M.S. in Mechanical Engineering, Shanghai University of Engineering Science, 2024–Present  
-  机械工程硕士研究生，上海工程技术大学，2024 至今
-
-- B.S. in Robotics Engineering, Wuhan Institute of Technology, 2020–2024  
-  机器人工程学士，武汉工程大学，2020–2024
+- M.S. in Mechanical Engineering, Shanghai University of Engineering Science, 2024--Present
+- B.S. in Robotics Engineering, Wuhan Institute of Technology, 2020--2024
 
 ## Publications
 
-See [my publications page](/publications/). 详见我的论文列表页面。
+See [my publications page](/publications/).
 
 ## Contact
 
-- 📍 Room 5229, Engineering Building, Shanghai University of Engineering Science, Songjiang District, Shanghai 201620
-- 📧 shaohan142@gmail.com
-- 🔗 [GitHub](https://github.com/fanfan142) | [Google Scholar](https://scholar.google.com/citations?view_op=list_works&hl=zh-CN&user=CW9IhLwAAAAJ) | [Twitter](https://twitter.com/)
+- Room 5229, Engineering Building, Shanghai University of Engineering Science, Songjiang District, Shanghai 201620
+- shaohan142@gmail.com
+- [GitHub](https://github.com/fanfan142) | [Google Scholar](https://scholar.google.com/citations?view_op=list_works&hl=zh-CN&user=CW9IhLwAAAAJ)
+
+---
+
+## 关于我
+
+我是上海工程技术大学机械工程专业硕士研究生，师从陈赛璇教授。研究方向为机器人灵巧手、仿生机械手与腱驱动机制，同时探索强化学习在机器人控制中的应用。研究工作贯穿从上层 RL 策略设计（JAX）到下层嵌入式控制（STM32、ESP32）的全栈技术栈，致力于连接仿真环境与真实硬件调试。
+
+硕士期间，我参与了开源灵巧手平台的可复现性项目，并在寒假线上实习中直接接触工业级灵巧手硬件，熟悉腱绳传动中的弹簧张力计算、绳结防滑、摩擦补偿等实际工程问题。
+
+目前正在推进 `aero-hand-open` 等开源灵巧手项目的复现与控制优化，探索仿真环境与真实硬件之间的迁移方法。
+
+## 研究兴趣
+
+- 机器人灵巧手与仿生操控
+- 腱驱动机构设计
+- 机器人强化学习控制
+- 硬件在环仿真
+
+## 教育经历
+
+- 机械工程硕士研究生，上海工程技术大学，2024 至今
+- 机器人工程学士，武汉工程大学，2020--2024
+
+## 发表论文
+
+详见我的[论文列表页面](/publications/)。
+
+## 联系方式
+
+- 上海市松江区 201620，上海工程技术大学，工程楼 5229 室
+- shaohan142@gmail.com
+- [GitHub](https://github.com/fanfan142) | [Google Scholar](https://scholar.google.com/citations?view_op=list_works&hl=zh-CN&user=CW9IhLwAAAAJ)
