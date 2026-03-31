@@ -39,7 +39,7 @@ ninja.data = [{
           },
         },{id: "nav-cv",
           title: "CV",
-          description: "This is a description of the page. You can modify it in &#39;_pages/cv.md&#39;. You can also change or remove the top pdf download button.",
+          description: "My curriculum vitae. Below you can find a downloadable PDF version.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/shaohan/cv/";
@@ -496,6 +496,11 @@ ninja.data = [{
           description: "another project with an image 🎉",
           section: "Projects",handler: () => {
               window.location.href = "/shaohan/projects/9_project/";
+            },},{id: "projects-串联关节型机器人多领域耦合建模与仿真",
+          title: '串联关节型机器人多领域耦合建模与仿真',
+          description: "基于 Modelica 语言构建串联关节型机器人的多领域耦合模型，涵盖机械、电气和控制系统，实现运动学与动力学精确描述。",
+          section: "Projects",handler: () => {
+              window.location.href = "/shaohan/projects/robot-multidomain/";
             },},{id: "projects-ur5e-自动贴膜产线设计",
           title: 'UR5e 自动贴膜产线设计',
           description: "基于 UR5e 机械臂的自动贴膜产线设计，结合深度视觉定位与末端执行器优化，实现曲面手机的高精度贴合。",
