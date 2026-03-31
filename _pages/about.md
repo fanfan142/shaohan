@@ -2,33 +2,62 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: <a href='#'>Shanghai University of Engineering Science</a>. Shanghai · 201620. "不断迭代，直至精确."
 
 profile:
   align: right
-  image: prof_pic.jpg
-  image_circular: false # crops the image to make it circular
+  image: shaohan.jpg
+  image_circular: false
   more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p>Room 5229, Engineering Building</p>
+    <p>Shanghai University of Engineering Science</p>
+    <p>Songjiang District, Shanghai 201620</p>
 
-selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true # includes social icons at the bottom of the page
+selected_papers: true
+social: true
 
 announcements:
-  enabled: true # includes a list of news items
-  scrollable: true # adds a vertical scroll bar if there are more than 3 news items
-  limit: 5 # leave blank to include all the news in the `_news` folder
+  enabled: true
+  scrollable: true
+  limit: 5
 
 latest_posts:
   enabled: true
-  scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
-  limit: 3 # leave blank to include all the blog posts
+  scrollable: true
+  limit: 3
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](https://www.reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+## About Me
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+I am a first-year graduate student in Mechanical Engineering at Shanghai University of Engineering Science, advised by Prof. Chen Saixuan (陈赛璇). 我的研究方向是**机器人灵巧手、仿生机械手与腱驱动机制**，同时探索强化学习在机器人控制中的应用。 I work across the full stack—from high-level RL policy design in JAX to low-level embedded control on STM32 and ESP32—bridging simulation and real-world hardware调试.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+我在硕士期间参与了灵巧手开源项目复现工作，也曾在寒假线上实习中直接接触工业级灵巧手硬件，熟悉腱绳传动中的弹簧张力计算、绳结防滑、摩擦补偿等实际工程问题。 I have hands-on experience with tendon-driven systems, including tension modeling, cable routing, and iterative debugging of slipping and friction issues in prototype stages.
+
+Currently, I am working on reproducible control frameworks for open-source dexterous hand platforms, aiming to bridge the sim-to-real gap in robotic manipulation.
+
+目前我正在推进 `aero-hand-open` 等开源灵巧手项目的复现与控制优化，探索仿真环境与真实硬件之间的迁移方法。
+
+## Research Interests
+
+- Dexterous Robotic Hands & Bionic Manipulation  机器人灵巧手与仿生操控
+- Tendon-Driven Mechanism Design  腱驱动机构设计
+- Reinforcement Learning for Robot Control  机器人强化学习控制
+- Hardware-in-the-Loop Simulation  硬件在环仿真
+
+## Education
+
+- M.S. in Mechanical Engineering, Shanghai University of Engineering Science, 2024–Present  
+  机械工程硕士研究生，上海工程技术大学，2024 至今
+
+- B.S. in Robotics Engineering, Wuhan Institute of Technology, 2020–2024  
+  机器人工程学士，武汉工程大学，2020–2024
+
+## Publications
+
+See [my publications page](/publications/). 详见我的论文列表页面。
+
+## Contact
+
+- 📍 Room 5229, Engineering Building, Shanghai University of Engineering Science, Songjiang District, Shanghai 201620
+- 📧 shaohan142@gmail.com
+- 🔗 [GitHub](https://github.com/fanfan142) | [Google Scholar](https://scholar.google.com/citations?view_op=list_works&hl=zh-CN&user=CW9IhLwAAAAJ) | [Twitter](https://twitter.com/)
