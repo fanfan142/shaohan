@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://fanfan142.github.io/shaohan/sitemap.xml
+Sitemap: https://fanfan142.github.io/shaohan//sitemap.xml
