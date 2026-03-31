@@ -5,7 +5,7 @@ permalink: /
 subtitle: <a href='#'>Shanghai University of Engineering Science</a>. Shanghai · 201620. "不断迭代，直至精确."
 
 profile:
-  align: right
+  align: left
   image: shaohan.jpg
   image_circular: false
   more_info: >
@@ -76,7 +76,7 @@ See [my publications page](/publications/).
 
 ## 教育经历
 
-- 机械工程硕士研究生，上海工程技术大学，2024 至今
+- 机械工程硕士研究生，上海工程技术大学，2025 至今
 - 机器人工程学士，武汉工程大学，2020--2024
 
 ## 发表论文
