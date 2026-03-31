@@ -20,7 +20,7 @@ lang: cn # 你网站的语言（例如：en, fr, cn, ru 等）
 icon:  # 用作网站 favicon 图标的 emoji 表情（或者，提供 /assets/img/ 中的图片名称）
 
 url: https://fanfan142.github.io # 站点的基础主机名和协议
-baseurl: /shaohan # 站点的子路径，例如 /blog/。如果是根目录请留空
+baseurl: /shaohan/ # 站点的子路径，例如 /blog/。如果是根目录请留空
 last_updated: true # 如果你想在页脚显示“最后更新时间”，请设置为 true
 impressum_path: # 设置路径以在页脚包含 impressum（版本说明/免责声明）链接，使用与页面中 permalink 相同的路径，有助于符合欧盟 GDPR 法规
 back_to_top: true # 设置为 false 以禁用“返回顶部”按钮
