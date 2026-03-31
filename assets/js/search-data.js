@@ -496,6 +496,11 @@ ninja.data = [{
           description: "another project with an image 🎉",
           section: "Projects",handler: () => {
               window.location.href = "/shaohan/projects/9_project/";
+            },},{id: "projects-ur5e-自动贴膜产线设计",
+          title: 'UR5e 自动贴膜产线设计',
+          description: "基于 UR5e 机械臂的自动贴膜产线设计，结合深度视觉定位与末端执行器优化，实现曲面手机的高精度贴合。",
+          section: "Projects",handler: () => {
+              window.location.href = "/shaohan/projects/ur5e-laminating/";
             },},{id: "teachings-data-science-fundamentals",
           title: 'Data Science Fundamentals',
           description: "This course covers the foundational aspects of data science, including data collection, cleaning, analysis, and visualization. Students will learn practical skills for working with real-world datasets.",
