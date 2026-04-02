@@ -76,6 +76,35 @@ nav_order: 3
   - 联系方式与外链
 - 备注：工作时间已改为 `2024.04–2024.09`
 
+#### 3.1.1 首页下方模块（当前已全部隐藏）
+
+当前 about 页底部这三个模块已按你的要求隐藏（中英文首页都隐藏）：
+
+1. 新闻（news）
+2. 最新文章（latest posts）
+3. 精选论文（selected publications）
+
+对应文件：
+
+- `/_pages/about.md`
+- `/_pages/about_zh.md`
+
+对应开关（front matter）：
+
+- `announcements.enabled: false`（新闻）
+- `latest_posts.enabled: false`（最新文章）
+- `selected_papers: false`（精选论文）
+
+如何重新打开（以后你要加时）：
+
+- 把上面 3 个开关改回 `true` 即可恢复显示。
+
+可添加什么内容：
+
+- 新闻：获奖、论文录用、项目里程碑、比赛结果（来源 `/_news/*.md`）
+- 最新文章：技术笔记、实验日志、项目复盘（来源 `/_posts/*.md`）
+- 精选论文：你在 `/_bibliography/papers.bib` 中标注 `selected={true}` 的论文
+
 ---
 
 ### 3.2 blog（已保留，简短占位）
