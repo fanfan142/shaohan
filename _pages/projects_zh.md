@@ -1,9 +1,9 @@
 ---
 layout: page
-title: Projects
-permalink: /projects/
-description: selected projects
-lang: en
+title: 项目
+permalink: /zh/projects/
+description: 项目展示
+lang: zh
 ref: projects
 nav: true
 nav_order: 3

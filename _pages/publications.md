@@ -1,14 +1,17 @@
 ---
 layout: page
 permalink: /publications/
-title: publications
-description: publications placeholder.
+title: Publications
+description: Publications placeholder.
+lang: en
+ref: publications
 nav: true
 nav_order: 2
 ---
 
-## Publications 占位
+## Publications
 
-- 本页用于论文、预印本、在投论文展示。
-- 论文数据维护在：`/_bibliography/papers.bib`
-- 建议每条至少包含：标题、作者、年份、状态（published/in-review/preprint）、链接（pdf/code/slides）。
+- This page is for published papers, preprints, and manuscripts under review.
+- Publication data is maintained in `/_bibliography/papers.bib`.
+- Suggested fields: title, authors, year, status
+  (published/in-review/preprint), and links (pdf/code/slides).

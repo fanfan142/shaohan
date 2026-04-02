@@ -1,9 +1,43 @@
 <header>
+  {% assign current_lang = page.lang | default: 'en' %}
+  {% assign is_zh = current_lang == 'zh' %}
+  {% assign home_permalink = '/' %}
+  {% if is_zh %}
+    {% assign home_permalink = '/zh/' %}
+  {% endif %}
+
+  {% assign about_title = 'about' %}
+  {% for p in site.pages %}
+    {% assign p_lang = p.lang | default: 'en' %}
+    {% if p.permalink == home_permalink and p_lang == current_lang %}
+      {% assign about_title = p.title %}
+    {% endif %}
+  {% endfor %}
+
+  {% assign target_lang = 'zh' %}
+  {% assign target_home = '/zh/' %}
+  {% assign language_label = '中文' %}
+  {% if is_zh %}
+    {% assign target_lang = 'en' %}
+    {% assign target_home = '/' %}
+    {% assign language_label = 'EN' %}
+  {% endif %}
+
+  {% assign switch_url = target_home | relative_url %}
+  {% if page.ref %}
+    {% for p in site.pages %}
+      {% assign p_lang = p.lang | default: 'en' %}
+      {% if p.ref == page.ref and p_lang == target_lang %}
+        {% assign switch_url = p.url | relative_url %}
+      {% endif %}
+    {% endfor %}
+  {% endif %}
+
   <!-- Nav Bar -->
   <nav id="navbar" class="navbar navbar-light navbar-expand-sm {% if site.navbar_fixed %}fixed-top{% else %}sticky-top{% endif %}" role="navigation">
     <div class="container">
-      {% if page.permalink != '/' %}
-        <a class="navbar-brand title font-weight-lighter" href="{{ site.baseurl }}/">
+      {% if page.permalink != home_permalink %}
+        <a class="navbar-brand title font-weight-lighter" href="{{ home_permalink | relative_url }}">
           {% if site.title == 'blank' %}
             {% if site.first_name %}
               <span class="font-weight-bold">
@@ -42,15 +76,11 @@
 
       <div class="collapse navbar-collapse text-right" id="navbarNav">
         <ul class="navbar-nav ml-auto flex-nowrap">
-          {% for page in site.pages %}
-            {% if page.permalink == '/' %} {% assign about_title = page.title %} {% endif %}
-          {% endfor %}
-
           <!-- About -->
-          <li class="nav-item {% if page.permalink == '/' %}active{% endif %}">
-            <a class="nav-link" href="{{ '/' | relative_url }}">
+          <li class="nav-item {% if page.permalink == home_permalink %}active{% endif %}">
+            <a class="nav-link" href="{{ home_permalink | relative_url }}">
               {{- about_title }}
-              {% if page.permalink == '/' %}
+              {% if page.permalink == home_permalink %}
                 <span class="sr-only">(current)</span>
               {% endif %}
             </a>
@@ -59,7 +89,8 @@
           <!-- Other pages -->
           {% assign sorted_pages = site.pages | sort: 'nav_order' %}
           {% for p in sorted_pages %}
-            {% if p.nav and p.autogen == null %}
+            {% assign p_lang = p.lang | default: 'en' %}
+            {% if p.nav and p.autogen == null and p_lang == current_lang and p.permalink != home_permalink %}
               {% if p.dropdown %}
                 {% assign has_active_child = false %}
                 {% for child in p.children %}
@@ -103,7 +134,7 @@
                   {%- if p.permalink contains '://' -%}
                     {%- assign url = p.permalink -%}
                   {%- elsif p.permalink contains '/blog/' -%}
-                    {%- assign url = '/blog/' -%}
+                    {%- assign url = p.permalink -%}
                   {%- else -%}
                     {%- assign url = p.url -%}
                   {%- endif %}
@@ -117,6 +148,11 @@
               {% endif %}
             {% endif %}
           {% endfor %}
+
+          <li class="nav-item {% if current_lang == target_lang %}active{% endif %}">
+            <a class="nav-link" href="{{ switch_url }}">{{ language_label }}</a>
+          </li>
+
           {% if site.search_enabled %}
             <!-- Search -->
             <li class="nav-item">

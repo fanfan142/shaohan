@@ -1,13 +1,16 @@
 ---
 layout: page
 permalink: /blog/
-title: blog
+title: Blog
+lang: en
+ref: blog
 nav: true
 nav_order: 1
 ---
 
-## Blog 占位
+## Blog
 
-- 这里用于发布技术笔记、项目复盘、论文阅读与实验记录。
-- 后续你可在 `/_posts/` 按 `YYYY-MM-DD-title.md` 新增文章。
-- 建议每篇至少包含：标题、日期、分类、3~5 句摘要。
+- This page is used for technical notes, project retrospectives, paper reading,
+  and experiment logs.
+- Add new posts under `/_posts/` with the `YYYY-MM-DD-title.md` pattern.
+- Suggested minimum for each post: title, date, category, and a short summary.

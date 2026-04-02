@@ -2,19 +2,22 @@
 layout: page
 title: CV
 permalink: /cv/
+lang: en
+ref: cv
 nav: true
 nav_order: 5
 cv_pdf: /assets/pdf/cv_shaohan.pdf
-description: CV page placeholder.
+description: Resume overview.
 ---
 
-## CV 占位
+## CV Overview
 
-- 本页用于在线简历展示，建议保留如下固定结构：
-  - 教育背景
-  - 工作经历
-  - 项目经历
-  - 荣誉奖项
-  - 技能
-- PDF 下载链接可放在页首：`/assets/pdf/cv_shaohan.pdf`
-- 建议在线版精简，完整信息放 PDF。
+- This page is for the online resume summary.
+- Suggested structure:
+  - Education
+  - Work Experience
+  - Projects
+  - Honors and Awards
+  - Skills
+- PDF download: `/assets/pdf/cv_shaohan.pdf`
+- Keep the online version concise and put full details in the PDF.
