@@ -14,21 +14,16 @@
     {% endif %}
   {% endfor %}
 
-  {% assign target_lang = 'zh' %}
-  {% assign target_home = '/zh/' %}
-  {% assign language_label = '中文' %}
-  {% if is_zh %}
-    {% assign target_lang = 'en' %}
-    {% assign target_home = '/' %}
-    {% assign language_label = 'EN' %}
-  {% endif %}
-
-  {% assign switch_url = target_home | relative_url %}
+  {% assign en_switch_url = '/' | relative_url %}
+  {% assign zh_switch_url = '/zh/' | relative_url %}
   {% if page.ref %}
     {% for p in site.pages %}
       {% assign p_lang = p.lang | default: 'en' %}
-      {% if p.ref == page.ref and p_lang == target_lang %}
-        {% assign switch_url = p.url | relative_url %}
+      {% if p.ref == page.ref and p_lang == 'en' %}
+        {% assign en_switch_url = p.url | relative_url %}
+      {% endif %}
+      {% if p.ref == page.ref and p_lang == 'zh' %}
+        {% assign zh_switch_url = p.url | relative_url %}
       {% endif %}
     {% endfor %}
   {% endif %}
@@ -149,8 +144,11 @@
             {% endif %}
           {% endfor %}
 
-          <li class="nav-item {% if current_lang == target_lang %}active{% endif %}">
-            <a class="nav-link" href="{{ switch_url }}">{{ language_label }}</a>
+          <li class="nav-item">
+            <a class="nav-link {% unless is_zh %}active{% endunless %}" href="{{ en_switch_url }}">EN</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link {% if is_zh %}active{% endif %}" href="{{ zh_switch_url }}">中文</a>
           </li>
 
           {% if site.search_enabled %}

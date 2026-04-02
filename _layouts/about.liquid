@@ -48,7 +48,9 @@ layout: default
     <!-- News -->
     {% if page.announcements and page.announcements.enabled %}
       <h2>
-        <a href="{{ nav_prefix | append: '/news/' | relative_url }}" style="color: inherit">{% if is_zh %}新闻{% else %}news{% endif %}</a>
+        <a href="{{ nav_prefix | append: '/news/' | relative_url }}" style="color: inherit">
+          {%- if is_zh %}新闻{% else %}news{% endif -%}
+        </a>
       </h2>
       {% include news.liquid limit=true %}
     {% endif %}
@@ -56,9 +58,9 @@ layout: default
     <!-- Latest posts -->
     {% if page.latest_posts and page.latest_posts.enabled %}
       <h2>
-        <a href="{{ nav_prefix | append: '/blog/' | relative_url }}" style="color: inherit"
-          >{% if is_zh %}最新文章{% else %}latest posts{% endif %}</a
-        >
+        <a href="{{ nav_prefix | append: '/blog/' | relative_url }}" style="color: inherit">
+          {%- if is_zh %}最新文章{% else %}latest posts{% endif -%}
+        </a>
       </h2>
       {% include latest_posts.liquid %}
     {% endif %}
@@ -66,9 +68,9 @@ layout: default
     <!-- Selected papers -->
     {% if page.selected_papers %}
       <h2>
-        <a href="{{ nav_prefix | append: '/publications/' | relative_url }}" style="color: inherit"
-          >{% if is_zh %}精选论文{% else %}selected publications{% endif %}</a
-        >
+        <a href="{{ nav_prefix | append: '/publications/' | relative_url }}" style="color: inherit">
+          {%- if is_zh %}精选论文{% else %}selected publications{% endif -%}
+        </a>
       </h2>
       {% include selected_papers.liquid %}
     {% endif %}
