@@ -1,8 +1,8 @@
 ---
 layout: post
-title: news
-permalink: /news/
-lang: en
+title: 新闻
+permalink: /zh/news/
+lang: zh
 ref: news
 nav: false
 ---
