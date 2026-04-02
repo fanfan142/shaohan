@@ -44,28 +44,53 @@
   <!-- Nav Bar -->
   <nav id="navbar" class="navbar navbar-light navbar-expand-sm {% if site.navbar_fixed %}fixed-top{% else %}sticky-top{% endif %}" role="navigation">
     <div class="container">
-      {% if page.permalink != home_permalink %}
-        <a class="navbar-brand title font-weight-lighter" href="{{ home_permalink | relative_url }}">
-          {% if site.title == 'blank' %}
-            {% if site.first_name %}
-              <span class="font-weight-bold">
-                {{- site.first_name -}}
-              </span>
+      <div class="navbar-left-controls">
+        {% if page.permalink != home_permalink %}
+          <a class="navbar-brand title font-weight-lighter" href="{{ home_permalink | relative_url }}">
+            {% if site.title == 'blank' %}
+              {% if site.first_name %}
+                <span class="font-weight-bold">
+                  {{- site.first_name -}}
+                </span>
+              {% endif %}
+              {% if site.middle_name %}
+                {{- site.middle_name -}}
+              {% endif %}
+              {% if site.last_name %}
+                {{- site.last_name -}}
+              {% endif %}
+            {% else %}
+              {{- site.title -}}
             {% endif %}
-            {% if site.middle_name %}
-              {{- site.middle_name -}}
+          </a>
+        {% elsif site.enable_navbar_social %}
+          <!-- Social Icons -->
+          <div class="navbar-brand social">{% social_links %}</div>
+        {% endif %}
+        <div class="lang-switch-inline" aria-label="Language switch">
+          <a
+            class="lang-switch-btn {% if is_zh %}active{% endif %}"
+            href="{{ zh_switch_url }}"
+            lang="zh"
+            {% if is_zh %}
+              aria-current="page"
             {% endif %}
-            {% if site.last_name %}
-              {{- site.last_name -}}
-            {% endif %}
-          {% else %}
-            {{- site.title -}}
-          {% endif %}
-        </a>
-      {% elsif site.enable_navbar_social %}
-        <!-- Social Icons -->
-        <div class="navbar-brand social">{% social_links %}</div>
-      {% endif %}
+          >
+            中
+          </a>
+          <span class="lang-switch-separator">/</span>
+          <a
+            class="lang-switch-btn {% unless is_zh %}active{% endunless %}"
+            href="{{ en_switch_url }}"
+            lang="en"
+            {% unless is_zh %}
+              aria-current="page"
+            {% endunless %}
+          >
+            EN
+          </a>
+        </div>
+      </div>
       <!-- Navbar Toggle -->
       <button
         class="navbar-toggler collapsed ml-auto"
@@ -156,13 +181,6 @@
               {% endif %}
             {% endif %}
           {% endfor %}
-
-          <li class="nav-item">
-            <a class="nav-link {% unless is_zh %}active{% endunless %}" href="{{ en_switch_url }}">EN</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link {% if is_zh %}active{% endif %}" href="{{ zh_switch_url }}">中文</a>
-          </li>
 
           {% if site.search_enabled %}
             <!-- Search -->

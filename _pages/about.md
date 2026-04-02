@@ -15,16 +15,16 @@ profile:
     <p>Shanghai University of Engineering Science</p>
     <p>Songjiang District, Shanghai 201620</p>
 
-selected_papers: true
+selected_papers: false
 social: true
 
 announcements:
-  enabled: true
+  enabled: false
   scrollable: true
   limit: 5
 
 latest_posts:
-  enabled: true
+  enabled: false
   scrollable: true
   limit: 3
 ---
