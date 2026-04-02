@@ -4,31 +4,52 @@ const ninja = document.querySelector('ninja-keys');
 // add the home and posts menu items
 ninja.data = [{
     id: "nav-about",
-    title: "about",
+    title: "About",
     section: "Navigation",
     handler: () => {
       window.location.href = "/shaohan/";
     },
   },{id: "nav-blog",
-          title: "blog",
+          title: "Blog",
+          description: "",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/shaohan/blog/";
+          },
+        },{id: "nav-博客",
+          title: "博客",
           description: "",
           section: "Navigation",
           handler: () => {
             window.location.href = "/shaohan/blog/";
           },
         },{id: "nav-publications",
-          title: "publications",
-          description: "publications placeholder.",
+          title: "Publications",
+          description: "Publications placeholder.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/shaohan/publications/";
           },
+        },{id: "nav-论文",
+          title: "论文",
+          description: "论文页面占位。",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/shaohan/zh/publications/";
+          },
         },{id: "nav-projects",
-          title: "projects",
+          title: "Projects",
           description: "selected projects",
           section: "Navigation",
           handler: () => {
             window.location.href = "/shaohan/projects/";
+          },
+        },{id: "nav-项目",
+          title: "项目",
+          description: "项目展示",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/shaohan/zh/projects/";
           },
         },{id: "nav-repositories",
           title: "repositories",
@@ -39,10 +60,17 @@ ninja.data = [{
           },
         },{id: "nav-cv",
           title: "CV",
-          description: "CV page placeholder.",
+          description: "Resume overview.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/shaohan/cv/";
+          },
+        },{id: "nav-简历",
+          title: "简历",
+          description: "在线中文简历概览。",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/shaohan/zh/cv/";
           },
         },{id: "nav-bookshelf",
           title: "bookshelf",
