@@ -49,6 +49,13 @@
 }
 
 .navbar.navbar-light {
+  .navbar-left-controls {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    min-width: 0;
+  }
+
   a {
     &:hover {
       text-decoration: none;
@@ -57,6 +64,7 @@
 
   .navbar-brand {
     color: var(--global-text-color);
+    margin-right: 0;
   }
 
   .navbar-nav .nav-item .nav-link {
@@ -112,6 +120,50 @@
         }
       }
     }
+  }
+}
+
+.lang-switch-inline {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-weight: 600;
+  white-space: nowrap;
+
+  .lang-switch-btn {
+    color: var(--global-text-color);
+    border: 1px solid var(--global-divider-color);
+    border-radius: 999px;
+    padding: 0.08rem 0.55rem;
+    line-height: 1.4;
+    font-size: 0.92rem;
+
+    &:hover {
+      color: var(--global-hover-color);
+      border-color: var(--global-hover-color);
+      text-decoration: none;
+    }
+
+    &.active {
+      color: var(--global-theme-color);
+      border-color: var(--global-theme-color);
+      background-color: rgba(128, 128, 128, 0.08);
+    }
+  }
+
+  .lang-switch-separator {
+    color: var(--global-text-color-light);
+  }
+}
+
+@media (max-width: 575.98px) {
+  .navbar.navbar-light .navbar-left-controls {
+    gap: 0.5rem;
+  }
+
+  .lang-switch-inline .lang-switch-btn {
+    padding: 0.06rem 0.42rem;
+    font-size: 0.86rem;
   }
 }
 
