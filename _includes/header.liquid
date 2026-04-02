@@ -7,23 +7,36 @@
   {% endif %}
 
   {% assign about_title = 'about' %}
-  {% for p in site.pages %}
-    {% assign p_lang = p.lang | default: 'en' %}
-    {% if p.permalink == home_permalink and p_lang == current_lang %}
-      {% assign about_title = p.title %}
-    {% endif %}
-  {% endfor %}
-
   {% assign en_switch_url = '/' | relative_url %}
   {% assign zh_switch_url = '/zh/' | relative_url %}
+  {% assign about_title_found = false %}
+  {% assign en_switch_found = false %}
+  {% assign zh_switch_found = false %}
   {% if page.ref %}
     {% for p in site.pages %}
       {% assign p_lang = p.lang | default: 'en' %}
+      {% if about_title_found == false and p.permalink == home_permalink and p_lang == current_lang %}
+        {% assign about_title = p.title %}
+        {% assign about_title_found = true %}
+      {% endif %}
       {% if p.ref == page.ref and p_lang == 'en' %}
         {% assign en_switch_url = p.url | relative_url %}
+        {% assign en_switch_found = true %}
       {% endif %}
       {% if p.ref == page.ref and p_lang == 'zh' %}
         {% assign zh_switch_url = p.url | relative_url %}
+        {% assign zh_switch_found = true %}
+      {% endif %}
+      {% if about_title_found and en_switch_found and zh_switch_found %}
+        {% break %}
+      {% endif %}
+    {% endfor %}
+  {% else %}
+    {% for p in site.pages %}
+      {% assign p_lang = p.lang | default: 'en' %}
+      {% if p.permalink == home_permalink and p_lang == current_lang %}
+        {% assign about_title = p.title %}
+        {% break %}
       {% endif %}
     {% endfor %}
   {% endif %}
