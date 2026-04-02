@@ -147,7 +147,7 @@
     &.active {
       color: var(--global-theme-color);
       border-color: var(--global-theme-color);
-      background-color: rgba(128, 128, 128, 0.08);
+      background-color: color-mix(in srgb, var(--global-theme-color) 10%, transparent);
     }
   }
 
