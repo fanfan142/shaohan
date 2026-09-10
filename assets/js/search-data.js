@@ -9,75 +9,40 @@ ninja.data = [{
     handler: () => {
       window.location.href = "/shaohan/";
     },
-  },{id: "nav-blog",
-          title: "Blog",
-          description: "",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/shaohan/blog/";
-          },
-        },{id: "nav-博客",
-          title: "博客",
-          description: "",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/shaohan/blog/";
-          },
-        },{id: "nav-publications",
-          title: "Publications",
-          description: "Publications placeholder.",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/shaohan/publications/";
-          },
-        },{id: "nav-论文",
-          title: "论文",
-          description: "论文页面占位。",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/shaohan/zh/publications/";
-          },
-        },{id: "nav-projects",
+  },{id: "nav-projects",
           title: "Projects",
-          description: "selected projects",
+          description: "Selected robotics projects across mechanism design, control, teleoperation, simulation, and learning.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/shaohan/projects/";
           },
         },{id: "nav-项目",
           title: "项目",
-          description: "项目展示",
+          description: "覆盖机构设计、底层控制、遥操作、仿真与学习算法的机器人项目。",
           section: "Navigation",
           handler: () => {
             window.location.href = "/shaohan/zh/projects/";
           },
         },{id: "nav-repositories",
-          title: "repositories",
-          description: "Edit the `_data/repositories.yml` and change the `github_users` and `github_repos` lists to include your own GitHub profile and repositories.",
+          title: "Repositories",
+          description: "Selected open-source robotics projects for dexterous hands, teleoperation, embedded control, and simulation.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/shaohan/repositories/";
           },
         },{id: "nav-cv",
           title: "CV",
-          description: "Resume overview.",
+          description: "Robotics engineering profile focused on dexterous hands and robot control.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/shaohan/cv/";
           },
         },{id: "nav-简历",
           title: "简历",
-          description: "在线中文简历概览。",
+          description: "聚焦灵巧手与机器人控制的在线简历。",
           section: "Navigation",
           handler: () => {
             window.location.href = "/shaohan/zh/cv/";
-          },
-        },{id: "nav-bookshelf",
-          title: "bookshelf",
-          description: "",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/shaohan/books/";
           },
         },{id: "post-a-post-with-plotly-js",
         
@@ -458,16 +423,36 @@ ninja.data = [{
             },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
           title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
           description: "",
-          section: "News",},{id: "projects-串联关节型机器人多领域耦合建模与仿真",
+          section: "News",},{id: "projects-omnihand-quest-3-遥操作与动作重定向",
+          title: 'OmniHand Quest 3 遥操作与动作重定向',
+          description: "建立 Quest 3 手部追踪数据链，完成标定、自由度重定向和 Windows 发布，用于灵巧手遥操作。",
+          section: "Projects",handler: () => {
+              window.location.href = "/shaohan/projects/omnihand-quest3/";
+            },},{id: "projects-串联关节型机器人多领域耦合建模与仿真",
           title: '串联关节型机器人多领域耦合建模与仿真',
           description: "基于 Modelica 语言构建串联关节型机器人的多领域耦合模型，涵盖机械、电气和控制系统，实现运动学与动力学精确描述。",
           section: "Projects",handler: () => {
               window.location.href = "/shaohan/projects/robot-multidomain/";
+            },},{id: "projects-拮抗式线驱动与多模态感知仿生灵巧手",
+          title: '拮抗式线驱动与多模态感知仿生灵巧手',
+          description: "项目负责人；覆盖模块化五指结构、双腱绳拮抗驱动、STM32 三环 FOC、磁编码器反馈与指尖压力感知。",
+          section: "Projects",handler: () => {
+              window.location.href = "/shaohan/projects/tendon-driven-bionic-hand/";
             },},{id: "projects-ur5e-自动贴膜产线设计",
           title: 'UR5e 自动贴膜产线设计',
           description: "基于 UR5e 机械臂的自动贴膜产线设计，结合深度视觉定位与末端执行器优化，实现曲面手机的高精度贴合。",
           section: "Projects",handler: () => {
               window.location.href = "/shaohan/projects/ur5e-laminating/";
+            },},{id: "projects-xbotics-o6-o20-灵巧手控制台",
+          title: 'Xbotics O6 / O20 灵巧手控制台',
+          description: "面向灵心巧手 O6/O20 的桌面控制工具，集成手势交互、动作库、宏执行、安全限幅、URDF 可视化与 OpenClaw。",
+          section: "Projects",handler: () => {
+              window.location.href = "/shaohan/projects/xbotics-hand-console/";
+            },},{id: "projects-xbotics-omnihand-开放学习资料仓库",
+          title: 'Xbotics OmniHand 开放学习资料仓库',
+          description: "面向 OmniHand 2025 灵动款的九章开源学习资料，覆盖硬件安全、SDK、触觉、视觉遥操作、Quest 3、仿真与学习。",
+          section: "Projects",handler: () => {
+              window.location.href = "/shaohan/projects/xbotics-omnihand-learning/";
             },},{id: "teachings-data-science-fundamentals",
           title: 'Data Science Fundamentals',
           description: "This course covers the foundational aspects of data science, including data collection, cleaning, analysis, and visualization. Students will learn practical skills for working with real-world datasets.",
@@ -479,25 +464,18 @@ ninja.data = [{
           section: "Teachings",handler: () => {
               window.location.href = "/shaohan/teachings/introduction-to-machine-learning/";
             },},{
-        id: 'social-cv',
-        title: 'CV',
-        section: 'Socials',
-        handler: () => {
-          window.open("/shaohan/assets/pdf/example_pdf.pdf", "_blank");
-        },
-      },{
         id: 'social-email',
         title: 'email',
         section: 'Socials',
         handler: () => {
-          window.open("mailto:%79%6F%75@%65%78%61%6D%70%6C%65.%63%6F%6D", "_blank");
+          window.open("mailto:%73%68%61%6F%68%61%6E%31%34%32@%67%6D%61%69%6C.%63%6F%6D", "_blank");
         },
       },{
-        id: 'social-inspire',
-        title: 'Inspire HEP',
+        id: 'social-github',
+        title: 'GitHub',
         section: 'Socials',
         handler: () => {
-          window.open("https://inspirehep.net/authors/1010907", "_blank");
+          window.open("https://github.com/fanfan142", "_blank");
         },
       },{
         id: 'social-rss',
@@ -505,20 +483,6 @@ ninja.data = [{
         section: 'Socials',
         handler: () => {
           window.open("/shaohan//feed.xml", "_blank");
-        },
-      },{
-        id: 'social-scholar',
-        title: 'Google Scholar',
-        section: 'Socials',
-        handler: () => {
-          window.open("https://scholar.google.com/citations?user=qc6CJjYAAAAJ", "_blank");
-        },
-      },{
-        id: 'social-custom_social',
-        title: 'Custom_social',
-        section: 'Socials',
-        handler: () => {
-          window.open("https://www.alberteinstein.com/", "_blank");
         },
       },{
       id: 'light-theme',
