@@ -2,7 +2,7 @@
 layout: page
 title: Projects
 permalink: /projects/
-description: selected projects
+description: Selected robotics projects across mechanism design, control, teleoperation, simulation, and learning.
 lang: en
 ref: projects
 nav: true

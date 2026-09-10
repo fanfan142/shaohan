@@ -4,7 +4,7 @@ permalink: /zh/blog/
 title: 博客
 lang: zh
 ref: blog
-nav: true
+nav: false
 nav_order: 1
 ---
 

@@ -1,14 +1,14 @@
 github_users:
-  - torvalds
-  - alshedivat
+  - fanfan142
 
 repo_description_lines_max: 2
 
 github_repos:
-  - alshedivat/al-folio
-  - jekyll/jekyll
-  - twbs/bootstrap
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - mathjax/MathJax
-  - jpswalsh/academicons
+  - fanfan142/Xbotics-omnihand-learning
+  - fanfan142/Xbotics-O6
+  - fanfan142/Xbotics-O20
+  - fanfan142/omnihand-quest3
+  - fanfan142/aero-hand-open_websockets
+  - fanfan142/FOC-on-STM32F103-DengFOC-AS5600
+  - fanfan142/aero-hand-learning-partner
+  - fanfan142/Open_Dex

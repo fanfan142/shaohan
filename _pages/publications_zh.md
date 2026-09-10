@@ -2,10 +2,10 @@
 layout: page
 permalink: /zh/publications/
 title: 论文
-description: 论文页面占位。
+description: 论文与预印本。
 lang: zh
 ref: publications
-nav: true
+nav: false
 nav_order: 2
 ---
 

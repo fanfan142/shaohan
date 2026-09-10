@@ -1,12 +1,12 @@
 ---
-layout: project
+layout: page
 title: 串联关节型机器人多领域耦合建模与仿真
 author: 邵涵
 permalink: /projects/robot-multidomain/
 description: 基于 Modelica 语言构建串联关节型机器人的多领域耦合模型，涵盖机械、电气和控制系统，实现运动学与动力学精确描述。
 category: work
 tags: []
-importance: 2
+importance: 3
 ---
 
 ## 项目概述

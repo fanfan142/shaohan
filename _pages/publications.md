@@ -2,10 +2,10 @@
 layout: page
 permalink: /publications/
 title: Publications
-description: Publications placeholder.
+description: Publications and preprints.
 lang: en
 ref: publications
-nav: true
+nav: false
 nav_order: 2
 ---
 

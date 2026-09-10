@@ -4,7 +4,7 @@ permalink: /blog/
 title: Blog
 lang: en
 ref: blog
-nav: true
+nav: false
 nav_order: 1
 ---
 

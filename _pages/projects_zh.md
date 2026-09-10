@@ -2,7 +2,7 @@
 layout: page
 title: 项目
 permalink: /zh/projects/
-description: 项目展示
+description: 覆盖机构设计、底层控制、遥操作、仿真与学习算法的机器人项目。
 lang: zh
 ref: projects
 nav: true

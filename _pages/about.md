@@ -4,16 +4,14 @@ title: About
 permalink: /
 lang: en
 ref: home
-subtitle: <a href='#'>Shanghai University of Engineering Science</a>. Shanghai · 201620. "Iterate until precise."
+subtitle: Robotics full-stack engineering · dexterous hands · robot control
 
 profile:
   align: left
   image: shaohan.jpg
   image_circular: false
   more_info: >
-    <p>Room 5229, Engineering Building</p>
-    <p>Shanghai University of Engineering Science</p>
-    <p>Songjiang District, Shanghai 201620</p>
+    <p><a href="mailto:shaohan142@gmail.com">shaohan142@gmail.com</a></p>
 
 selected_papers: false
 social: true
@@ -31,45 +29,81 @@ latest_posts:
 
 ## About Me
 
-I am a first-year graduate student in Mechanical Engineering at Shanghai University
-of Engineering Science, advised by Prof. Chen Saixuan (陈赛璇). My research
-focuses on dexterous robotic hands, bionic manipulation, and tendon-driven
-mechanisms, with additional interest in reinforcement learning for robot control.
-I work across the full stack, from high-level RL policy design in JAX to low-level
-embedded control on STM32 and ESP32, bridging simulation and real-world hardware
-debugging.
-
-I have participated in reproducibility projects for open-source dexterous hand
-platforms and have hands-on experience with industrial-grade dexterous hand
-hardware during winter online internships. I am familiar with practical
-engineering challenges in tendon-driven systems, including spring tension
-calculation, cable knot anti-slip techniques, and friction compensation.
-
-Currently, I am working on reproducible control frameworks for open-source
-dexterous hand platforms, aiming to bridge the sim-to-real gap in robotic
+I am a master's student in Mechanical Engineering at Shanghai University of
+Engineering Science (2025-2028). My work spans tendon-driven dexterous hands,
+embedded motor control, teleoperation, simulation, and learning-based
 manipulation.
+
+I currently lead the dexterous-hand direction at the Xbotics embodied
+intelligence community. I have built reproducible learning material and desktop
+tools for O6, O20, and OmniHand platforms, developed visual gesture mapping and
+action-generation pipelines, and worked on Quest 3 teleoperation and MuJoCo
+environments. My engineering experience ranges from STM32 FOC and CAN-based
+hardware control to Python/C++/C# software and robot simulation.
+
+I am especially interested in connecting mechanism design, low-level control,
+and learned manipulation policies so that dexterous hands remain controllable,
+observable, and safe from simulation to real hardware.
 
 ## Research Interests
 
 - Dexterous Robotic Hands & Bionic Manipulation
 - Tendon-Driven Mechanism Design
-- Reinforcement Learning for Robot Control
-- Hardware-in-the-Loop Simulation
+- FOC and Multi-Loop Joint Control
+- Quest 3 Teleoperation and Motion Retargeting
+- Reinforcement Learning, Imitation Learning, and VLA Manipulation
+- Hardware-in-the-Loop Simulation and Sim-to-Real Transfer
+
+## Selected Projects
+
+- **Antagonistic Tendon-Driven Biomimetic Hand** (2026, project lead):
+  modular fingers, dual-tendon antagonistic drive, STM32G431 three-loop FOC,
+  magnetic encoder feedback, and fingertip pressure sensing.
+- **Xbotics OmniHand Learning Repository** (2026): a nine-chapter open learning
+  repository covering hardware safety, SDK, joint and tactile control, vision
+  teleoperation, Quest 3 retargeting, simulation, and learning.
+- **Xbotics O6/O20 Consoles** (2026): desktop control tools with gesture
+  mapping, preset actions, dataset trajectories, macro execution, safety limits,
+  URDF visualization, and OpenClaw integration.
+- **OmniHand Quest 3 Teleoperation** (2026): hand-tracking data link,
+  calibration, retargeting, and a Windows release for dexterous-hand
+  teleoperation.
 
 ## Education
 
 - M.S. in Mechanical Engineering, Shanghai University of Engineering Science,
-  2024--Present
+  2025--2028
 - B.S. in Robotics Engineering, Wuhan Institute of Technology, 2020--2024
 
-## Publications
+## Work Experience
 
-See [my publications page]({{ '/publications/' | relative_url }}).
+- **Dexterous Hand Direction Lead**, Xbotics Embodied Intelligence Community,
+  2026.01-Present. Coordinate collaboration projects, online courses, and a
+  four-day offline training program; develop gesture mapping, O6/O20 control,
+  MuJoCo environments, and data-driven action-generation workflows.
+- **Motion Control Algorithm Engineer**, Shenzhen Youyikong Software Co., Ltd.,
+  Changsha Branch, 2024.04-2024.10. Worked on vibration suppression, feedforward
+  and servo control, five-axis CNC simulation, RTCP validation, mechanism
+  calibration, C++/C# control software, and developer documentation.
+
+## Technical Skills
+
+- **Languages:** Python, C++, C#, MATLAB/Simulink
+- **Robotics:** ROS/ROS2, MuJoCo, Gazebo, CoppeliaSim, Isaac Lab
+- **Hardware:** STM32, HAL, FOC, CAN, magnetic encoders, pressure sensors
+- **Platforms:** OmniHand SDK, LinkerHand SDK (O6/O20), MediaPipe, Quest 3
+- **Design:** SolidWorks, AutoCAD
+- **Learning:** Reinforcement learning, behavior cloning, VLA inference and fine-tuning
+
+## Awards
+
+- National Third Prize and Shanghai First Prize, 21st China Graduate Electronics
+  Design Contest; Altium Special Award (Shanghai).
+- Hubei Provincial Second Prize, Higher Education Press Cup National College
+  Mathematical Modeling Contest.
+- National Third Prize, Shuwei Cup National College Mathematical Modeling
+  Contest.
 
 ## Contact
 
-- Room 5229, Engineering Building, Shanghai University of Engineering Science,
-  Songjiang District, Shanghai 201620
-- shaohan142@gmail.com
-- [GitHub](https://github.com/fanfan142) |
-  [Google Scholar](https://scholar.google.com/citations?view_op=list_works&hl=zh-CN&user=CW9IhLwAAAAJ)
+Email: [shaohan142@gmail.com](mailto:shaohan142@gmail.com)
