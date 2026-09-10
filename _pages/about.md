@@ -30,23 +30,25 @@ latest_posts:
 ## About Me
 
 I am a master's student in Mechanical Engineering at Shanghai University of
-Engineering Science, advised by Prof. Chen Saixuan. My research focuses on
-dexterous robotic hands, biomimetic hands, and tendon-driven mechanisms, with
-additional work on reinforcement learning for robot control. My research and
-engineering practice span the full stack, from high-level RL policy design in
-JAX to low-level embedded control on STM32 and ESP32, with the goal of
-connecting simulation environments with real-world hardware debugging.
+Engineering Science, advised by Prof. Chen Saixuan. My research centers on
+dexterous robotic hands, biomimetic hands, and tendon-driven mechanisms, with a
+secondary focus on reinforcement learning for robot control. My work spans
+high-level policy design and training in JAX through low-level actuation and
+real-time control on STM32 and ESP32, with particular attention to mismatches
+between simulated and physical behavior and to making control processes
+reproducible.
 
-During my master's studies, I contributed to reproducibility projects for
-open-source dexterous-hand platforms and gained direct hands-on experience with
-industrial-grade dexterous-hand hardware during a winter online internship.
-This work has given me practical experience with spring-tension calculation,
-knot anti-slip techniques, and friction compensation in tendon-driven systems.
+During my master's studies, I contributed to reproducibility work for
+open-source dexterous-hand platforms and worked directly with industrial-grade
+dexterous-hand hardware during a winter online internship. These experiences
+gave me practical familiarity with tendon-tension calculation, knot anti-slip
+design, and friction compensation, as well as hands-on experience in mechanism
+assembly, communication debugging, and controller tuning.
 
-I am currently advancing the reproduction and control optimization of
-open-source dexterous-hand projects such as `aero-hand-open`, while exploring
-methods for transferring controllers and learned policies from simulation to
-real hardware.
+My current work continues to focus on reproducing and optimizing open-source
+dexterous-hand platforms and transferring controllers and learned policies from
+simulation to real hardware, with the aim of integrating mechanism design,
+low-level control, and learning into a verifiable, iterative system.
 
 ## Research Interests
 
