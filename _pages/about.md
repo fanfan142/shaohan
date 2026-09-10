@@ -30,20 +30,23 @@ latest_posts:
 ## About Me
 
 I am a master's student in Mechanical Engineering at Shanghai University of
-Engineering Science (2025-2028). My work spans tendon-driven dexterous hands,
-embedded motor control, teleoperation, simulation, and learning-based
-manipulation.
+Engineering Science, advised by Prof. Chen Saixuan. My research focuses on
+dexterous robotic hands, biomimetic hands, and tendon-driven mechanisms, with
+additional work on reinforcement learning for robot control. My research and
+engineering practice span the full stack, from high-level RL policy design in
+JAX to low-level embedded control on STM32 and ESP32, with the goal of
+connecting simulation environments with real-world hardware debugging.
 
-I currently lead the dexterous-hand direction at the Xbotics embodied
-intelligence community. I have built reproducible learning material and desktop
-tools for O6, O20, and OmniHand platforms, developed visual gesture mapping and
-action-generation pipelines, and worked on Quest 3 teleoperation and MuJoCo
-environments. My engineering experience ranges from STM32 FOC and CAN-based
-hardware control to Python/C++/C# software and robot simulation.
+During my master's studies, I contributed to reproducibility projects for
+open-source dexterous-hand platforms and gained direct hands-on experience with
+industrial-grade dexterous-hand hardware during a winter online internship.
+This work has given me practical experience with spring-tension calculation,
+knot anti-slip techniques, and friction compensation in tendon-driven systems.
 
-I am especially interested in connecting mechanism design, low-level control,
-and learned manipulation policies so that dexterous hands remain controllable,
-observable, and safe from simulation to real hardware.
+I am currently advancing the reproduction and control optimization of
+open-source dexterous-hand projects such as `aero-hand-open`, while exploring
+methods for transferring controllers and learned policies from simulation to
+real hardware.
 
 ## Research Interests
 
