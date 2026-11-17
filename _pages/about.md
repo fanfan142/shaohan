@@ -33,6 +33,8 @@ I am a master's student in Mechanical Engineering at Shanghai University of Engi
 
 I prefer to carry a full stack myself: mechanism modelling, embedded actuation, simulation, policy training, and reproduction on hardware.
 
+<div style="clear: both;"></div>
+
 ## Research Interests
 
 - Dexterous hands and in-hand manipulation
