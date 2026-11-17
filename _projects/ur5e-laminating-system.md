@@ -6,7 +6,7 @@ permalink: /projects/ur5e-laminating/
 description: 基于 UR5e 机械臂的自动贴膜产线设计，结合深度视觉定位与末端执行器优化，实现曲面手机的高精度贴合。
 category: work
 tags: []
-importance: 11
+importance: 10
 ---
 
 ## 项目概述

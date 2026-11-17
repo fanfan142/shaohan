@@ -6,7 +6,7 @@ permalink: /projects/robot-multidomain/
 description: 基于 Modelica 语言构建串联关节型机器人的多领域耦合模型，涵盖机械、电气和控制系统，实现运动学与动力学精确描述。
 category: work
 tags: []
-importance: 12
+importance: 11
 ---
 
 ## 项目概述
