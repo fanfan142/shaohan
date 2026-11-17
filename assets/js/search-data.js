@@ -425,17 +425,17 @@ ninja.data = [{
           description: "",
           section: "News",},{id: "projects-aero-hand-open-遥操作链路重构",
           title: 'Aero Hand Open 遥操作链路重构',
-          description: "进行时 · 把 Aero Hand Open 的遥操作通信层改为 WebSocket 长连接，统一状态推送、指令下发与断线重连，并重构上位机与移动端。",
+          description: "将 Aero Hand Open 的遥操作通信层重构为 WebSocket 长连接，统一状态推送、指令下发与断线重连，并重做上位机与移动端。",
           section: "Projects",handler: () => {
               window.location.href = "/shaohan/projects/aero-hand-open-teleop/";
             },},{id: "projects-多手型灵巧手内强化学习旋转",
           title: '多手型灵巧手内强化学习旋转',
-          description: "进行时 · O30 / O20（有触觉、无触觉）/ O10 三款灵巧手在 MuJoCo·MJX 中完成球与方块的手内旋转，O10 方块已实现真机开环回放。",
+          description: "O30、O20、O10 三款灵巧手在 MuJoCo / MJX 中的手内旋转训练，以及从仿真策略到真机的迁移。",
           section: "Projects",handler: () => {
               window.location.href = "/shaohan/projects/dex-rounding/";
             },},{id: "projects-omnihand-2025-三指支撑移动爬行",
           title: 'OmniHand 2025 三指支撑移动爬行',
-          description: "进行时 · 用三指支撑构型让灵巧手自身在平面上移动爬行，完成步态设计、接触时序调试与录制回放。",
+          description: "三指支撑构型下灵巧手的自身移动爬行，涵盖步姿设计、接触时序与可复现的回放流程。",
           section: "Projects",handler: () => {
               window.location.href = "/shaohan/projects/omnihand-crawl/";
             },},{id: "projects-omnihand-quest-3-遥操作与动作重定向",
@@ -450,7 +450,7 @@ ninja.data = [{
               window.location.href = "/shaohan/projects/robot-multidomain/";
             },},{id: "projects-触觉-o6-o20-二次开发与-vla-探索",
           title: '触觉 O6 / O20 二次开发与 VLA 探索',
-          description: "进行时 · 基于 O6 与 O20 的关节与触觉数据做二次开发，探索触觉条件下的操作策略与 VLA 模型推理、微调路径。",
+          description: "基于 O6 与 O20 的关节与触觉数据开展二次开发，探索触觉条件下的操作策略与 VLA 模型的推理与微调。",
           section: "Projects",handler: () => {
               window.location.href = "/shaohan/projects/tactile-o6-o20-vla/";
             },},{id: "projects-拮抗式线驱动与多模态感知仿生灵巧手",
@@ -458,14 +458,9 @@ ninja.data = [{
           description: "项目负责人；19 自由度模块化五指结构、双腱绳拮抗驱动、STM32 三环 FOC、磁编码器反馈与指尖压力感知，研电赛全国三等奖。",
           section: "Projects",handler: () => {
               window.location.href = "/shaohan/projects/tendon-driven-bionic-hand/";
-            },},{id: "projects-设备台账与课题接入文档体系-tools2crew",
-          title: '设备台账与课题接入文档体系（tools2crew）',
-          description: "进行时 · 把全部硬件说明书、局域网 HPC 服务器接入说明与课题交接文档整理成可检索的文件树与校验过的台账。",
-          section: "Projects",handler: () => {
-              window.location.href = "/shaohan/projects/tools2crew-docs/";
             },},{id: "projects-ur5-omnihand-2025-臂手协同螺纹操作",
           title: 'UR5 + OmniHand 2025 臂手协同螺纹操作',
-          description: "进行时 · UR5（CB3）配合 OmniHand 2025 搭建实验平台，切入螺钉旋入与螺母预接合，处理 TCP 进给中的掌内相对运动补偿。",
+          description: "UR5 与 OmniHand 2025 组成的臂手平台，完成螺钉旋入与螺母预接合，重点处理掌内相对运动补偿与轴向顺应。",
           section: "Projects",handler: () => {
               window.location.href = "/shaohan/projects/ur5-omnihand-screw/";
             },},{id: "projects-ur5e-自动贴膜产线设计",
