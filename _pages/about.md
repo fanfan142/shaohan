@@ -4,7 +4,7 @@ title: About
 permalink: /
 lang: en
 ref: home
-subtitle: Robotics full-stack engineering · dexterous hands · robot control
+subtitle: Dexterous hands · tendon-driven mechanisms · RL in-hand manipulation · robotics full-stack
 
 profile:
   align: left
@@ -29,85 +29,73 @@ latest_posts:
 
 ## About Me
 
-I am a master's student in Mechanical Engineering at Shanghai University of
-Engineering Science, advised by Prof. Chen Saixuan. My research centers on
-dexterous robotic hands, biomimetic hands, and tendon-driven mechanisms, with a
-secondary focus on reinforcement learning for robot control. My work spans
-high-level policy design and training in JAX through low-level actuation and
-real-time control on STM32 and ESP32, with particular attention to mismatches
-between simulated and physical behavior and to making control processes
-reproducible.
+I am a master's student in Mechanical Engineering at Shanghai University of Engineering Science, advised by Prof. Chen Saixuan, and a **founding member of the Xbotics Embodied Intelligence Community, where I lead the dexterous-hand direction**. My research centers on dexterous-hand in-hand manipulation: from mechanism and tendon routing design, through multi-loop FOC actuation, to reinforcement-learning policy training and sim-to-real transfer.
 
-During my master's studies, I contributed to reproducibility work for
-open-source dexterous-hand platforms and worked directly with industrial-grade
-dexterous-hand hardware during a winter online internship. These experiences
-gave me practical familiarity with tendon-tension calculation, knot anti-slip
-design, and friction compensation, as well as hands-on experience in mechanism
-assembly, communication debugging, and controller tuning.
+I prefer to carry a full stack myself: mechanical modelling, embedded actuation and communication, simulation environment construction, policy training and evaluation, and reproduction on real hardware. Three hands of different specifications (O30, O20, O10) all rotate target objects in simulation — two spheres and one cube — and the O10 cube rotation has been reproduced on real hardware in open loop. Within this project, the multi-hand model corrections, task and scene construction, and the training/evaluation pipeline are my own work; the policy training and model-optimization methods follow open-source implementations such as Sharpa and HORA.
 
-My current work continues to focus on reproducing and optimizing open-source
-dexterous-hand platforms and transferring controllers and learned policies from
-simulation to real hardware, with the aim of integrating mechanism design,
-low-level control, and learning into a verifiable, iterative system.
+Beyond research, I own the dexterous-hand track in the community: collaboration projects, online courses, and offline training camps, along with several open-source repositories and control consoles for developers.
 
-## Research Interests
+## Ongoing Work
 
-- Dexterous Robotic Hands & Bionic Manipulation
-- Tendon-Driven Mechanism Design
-- FOC and Multi-Loop Joint Control
-- Quest 3 Teleoperation and Motion Retargeting
-- Reinforcement Learning, Imitation Learning, and VLA Manipulation
-- Hardware-in-the-Loop Simulation and Sim-to-Real Transfer
+The following projects are still in progress; items marked **ongoing** reflect their current state rather than final results.
+
+- **RL-based in-hand rotation across hand models** — ongoing. Three hands rotate target objects in MuJoCo / MJX: O30 (80 mm sphere), O20 (80 mm sphere, tactile and non-tactile baselines), and O10 (50 mm cube), reaching 591.98° of accumulated rotation in simulation. The O10 cube has been reproduced on hardware in open loop (61.17 s). Current work moves the O20 non-tactile baseline toward closed-loop hardware transfer and cross-hand, cross-object generalization.
+- **UR5 + OmniHand 2025 arm–hand screw-driving** — ongoing. A UR5 (CB3) platform paired with OmniHand 2025, targeting screw insertion and nut pre-engagement with axial compliance; the work focuses on compensating the nut's in-palm relative motion during TCP feed and on validating arm feed accuracy independently.
+- **OmniHand 2025 three-finger crawling** — ongoing. Locomotion of the hand itself across a plane using a three-finger support gait, with contact-phase tuning and a reproducible record/replay pipeline.
+- **Aero Hand Open teleoperation refactor** — ongoing. Rebuilding the communication layer of the teleoperation stack around WebSocket long-lived connections, unifying state streaming, command dispatch, and reconnect handling, with a rebuilt desktop and mobile front end.
+- **Tactile O6/O20 secondary development and VLA exploration** — ongoing. Building on joint and tactile data from O6/O20 to explore tactile-conditioned manipulation and the inference/fine-tuning path for VLA models on dexterous hands.
+- **Hardware and project documentation system (tools2crew)** — ongoing. Consolidating every device manual, the lab HPC server access guide, and project handover documents into one searchable file tree.
 
 ## Selected Projects
 
-- **Antagonistic Tendon-Driven Biomimetic Hand** (2026, project lead):
-  modular fingers, dual-tendon antagonistic drive, STM32G431 three-loop FOC,
-  magnetic encoder feedback, and fingertip pressure sensing.
-- **Xbotics OmniHand Learning Repository** (2026): a nine-chapter open learning
-  repository covering hardware safety, SDK, joint and tactile control, vision
-  teleoperation, Quest 3 retargeting, simulation, and learning.
-- **Xbotics O6/O20 Consoles** (2026): desktop control tools with gesture
-  mapping, preset actions, dataset trajectories, macro execution, safety limits,
-  URDF visualization, and OpenClaw integration.
-- **OmniHand Quest 3 Teleoperation** (2026): hand-tracking data link,
-  calibration, retargeting, and a Windows release for dexterous-hand
-  teleoperation.
+- **Antagonistic tendon-driven biomimetic hand** (2026, project lead): 19-DoF modular five-finger structure, dual-tendon antagonistic drive, STM32G431 three-loop FOC, magnetic encoder feedback, and fingertip pressure sensing. National Third Prize, Shanghai First Prize, and the Altium Special Award at the 21st China Graduate Electronics Design Contest.
+- **Xbotics OmniHand learning repository** (2026): a nine-chapter open learning repository covering hardware safety, SDK, joint and tactile control, vision teleoperation, Quest 3 retargeting, simulation, and learning.
+- **Xbotics O6 / O20 consoles** (2026): desktop control tools with gesture mapping, preset actions, dataset trajectories, macro execution, safety limits, URDF visualization, and OpenClaw integration.
+- **OmniHand Quest 3 teleoperation** (2026): hand-tracking data link, calibration, 16-to-10 DoF retargeting, and a validated Windows release.
+- **UR5e laminating production line**: depth-vision localization with dual end effectors (glue gun and suction cup), validated in CoppeliaSim with RTCP control.
+- **Multi-domain modelling of a serial robot** (undergraduate thesis): Modelica models integrating mechanical dynamics, motor, and sensor domains, validated in simulation.
 
 ## Education
 
-- M.S. in Mechanical Engineering, Shanghai University of Engineering Science,
-  2025--2028
+- M.S. in Mechanical Engineering, Shanghai University of Engineering Science, 2025--2028
 - B.S. in Robotics Engineering, Wuhan Institute of Technology, 2020--2024
 
 ## Work Experience
 
-- **Dexterous Hand Direction Lead**, Xbotics Embodied Intelligence Community,
-  2026.01-Present. Coordinate collaboration projects, online courses, and a
-  four-day offline training program; develop gesture mapping, O6/O20 control,
-  MuJoCo environments, and data-driven action-generation workflows.
-- **Motion Control Algorithm Engineer**, Shenzhen Youyikong Software Co., Ltd.,
-  Changsha Branch, 2024.04-2024.10. Worked on vibration suppression, feedforward
-  and servo control, five-axis CNC simulation, RTCP validation, mechanism
-  calibration, C++/C# control software, and developer documentation.
+- **Founding Member & Dexterous-Hand Direction Lead**, Xbotics Embodied Intelligence Community, 2026.01-Present
+  - Shape the community's technical direction and content system as a founding member; own the dexterous-hand roadmap, collaboration projects, and external courses
+  - Design and deliver the dexterous-hand online course series and a four-day offline training camp, including environment preparation and on-site instruction
+  - Develop MediaPipe gesture recognition, the OpenClaw O6/O20 console, and GR00T / MuJoCo simulation environments
+  - Extract O6 episode data from the LinkerHand Open-World Dataset for action inference and envelop-grasp pose generation
+  - Maintain the OmniHand learning repository, O6/O20 consoles, and Quest 3 teleoperation repositories
+- **Motion Control Algorithm Engineer**, Shenzhen Youyikong Software Co., Ltd., Changsha Branch, 2024.04-2024.10
+  - Worked on vibration suppression, feedforward and servo control algorithms
+  - Completed five-axis CNC motion simulation, RTCP validation, and mechanism calibration
+  - Built motion control libraries and UI in C++/C#, and wrote developer documentation
+
+## Research Interests
+
+- Dexterous hands and in-hand manipulation
+- Tendon-driven and antagonistic mechanism design
+- FOC and multi-loop joint control
+- Reinforcement learning, imitation learning, and VLA manipulation
+- Quest 3 teleoperation and motion retargeting
+- Sim-to-real transfer and hardware-in-the-loop validation
 
 ## Technical Skills
 
 - **Languages:** Python, C++, C#, MATLAB/Simulink
-- **Robotics:** ROS/ROS2, MuJoCo, Gazebo, CoppeliaSim, Isaac Lab
-- **Hardware:** STM32, HAL, FOC, CAN, magnetic encoders, pressure sensors
-- **Platforms:** OmniHand SDK, LinkerHand SDK (O6/O20), MediaPipe, Quest 3
-- **Design:** SolidWorks, AutoCAD
-- **Learning:** Reinforcement learning, behavior cloning, VLA inference and fine-tuning
+- **Robotics:** MuJoCo / MJX, Isaac Lab, ROS/ROS2, Gazebo, CoppeliaSim
+- **Embedded & hardware:** STM32, HAL, FOC, CAN, magnetic encoders, pressure and tactile sensing
+- **Dexterous-hand platforms:** OmniHand SDK, LinkerHand SDK (O6/O20), MediaPipe, Quest 3
+- **Learning:** PPO-style RL training, teacher-student distillation, domain randomization, behavior cloning, VLA inference and fine-tuning
+- **Design:** SolidWorks, AutoCAD, Altium Designer
 
 ## Awards
 
-- National Third Prize and Shanghai First Prize, 21st China Graduate Electronics
-  Design Contest; Altium Special Award (Shanghai).
-- Hubei Provincial Second Prize, Higher Education Press Cup National College
-  Mathematical Modeling Contest.
-- National Third Prize, Shuwei Cup National College Mathematical Modeling
-  Contest.
+- National Third Prize and Shanghai First Prize, 21st China Graduate Electronics Design Contest; Altium Special Award (Shanghai).
+- Hubei Provincial Second Prize, Higher Education Press Cup National College Mathematical Modeling Contest.
+- National Third Prize, Shuwei Cup National College Mathematical Modeling Contest.
 
 ## Contact
 

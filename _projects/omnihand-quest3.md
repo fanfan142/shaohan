@@ -6,7 +6,7 @@ permalink: /projects/omnihand-quest3/
 description: 建立 Quest 3 手部追踪数据链，完成标定、自由度重定向和 Windows 发布，用于灵巧手遥操作。
 category: robotics
 tags: [Quest 3, Teleoperation, Retargeting]
-importance: 2
+importance: 5
 github: https://github.com/fanfan142/omnihand-quest3
 ---
 

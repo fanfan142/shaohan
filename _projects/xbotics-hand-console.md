@@ -6,7 +6,7 @@ permalink: /projects/xbotics-hand-console/
 description: 面向灵心巧手 O6/O20 的桌面控制工具，集成手势交互、动作库、宏执行、安全限幅、URDF 可视化与 OpenClaw。
 category: software
 tags: [O6, O20, PySide6, OpenClaw]
-importance: 2
+importance: 4
 github: https://github.com/fanfan142/Xbotics-O6
 ---
 

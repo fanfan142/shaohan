@@ -10,13 +10,15 @@ contact_note: >
   # 你甚至可以在这里添加一条小备注，说明哪种方式最容易联系到你。
 description: > # ">" 符号表示忽略换行符，直到遇到 "footer_text:"
   Robotics full-stack engineering for dexterous hands, embedded control,
-  teleoperation, simulation, and learning-based manipulation.
-  聚焦灵巧手、嵌入式控制、遥操作、仿真与学习型操作的机器人全栈工程。
+  teleoperation, simulation, and learning-based manipulation. Founding member
+  of the Xbotics embodied intelligence community and lead of its dexterous-hand
+  track.
+  聚焦灵巧手、嵌入式控制、遥操作、仿真与学习型操作的机器人全栈工程；Xbotics 具身智能社区主创、灵巧手方向负责人。
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
   Photos from <a href="https://unsplash.com" target="_blank">Unsplash</a>.
-keywords: robotics, dexterous hand, tendon-driven, FOC, teleoperation, MuJoCo, robot learning # 添加你自己的关键词或留空
+keywords: robotics, dexterous hand, in-hand manipulation, tendon-driven, FOC, teleoperation, MuJoCo, reinforcement learning, sim-to-real, Xbotics # 添加你自己的关键词或留空
 lang: cn # 你网站的语言（例如：en, fr, cn, ru 等）
 icon:  # 用作网站 favicon 图标的 emoji 表情（或者，提供 /assets/img/ 中的图片名称）
 

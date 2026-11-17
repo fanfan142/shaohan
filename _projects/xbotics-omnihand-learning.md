@@ -6,7 +6,7 @@ permalink: /projects/xbotics-omnihand-learning/
 description: 面向 OmniHand 2025 灵动款的九章开源学习资料，覆盖硬件安全、SDK、触觉、视觉遥操作、Quest 3、仿真与学习。
 category: open-source
 tags: [OmniHand, Tutorial, Teleoperation]
-importance: 1
+importance: 3
 github: https://github.com/fanfan142/Xbotics-omnihand-learning
 ---
 
